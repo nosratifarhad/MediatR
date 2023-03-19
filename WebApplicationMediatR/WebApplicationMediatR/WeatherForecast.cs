@@ -1,4 +1,4 @@
-namespace WebApplication.MediatR
+namespace WebApplicationMediatR
 {
     public class WeatherForecast
     {
