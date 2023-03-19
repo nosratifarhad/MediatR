@@ -5,14 +5,14 @@ namespace WebApplicationMediatR.Service
 {
     public class ProductService : IProductService
     {
-        public Task CreateProduct(CreateProductDto createProductDto)
+        public async Task CreateProduct(CreateProductDto createProductDto)
         {
-            throw new NotImplementedException();
+            await Task.Delay(1000);
         }
 
-        public Task<IEnumerable<ProductVM>> GetProduct()
+        public async Task<IEnumerable<ProductVM>> GetProduct()
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(new List<ProductVM>());
         }
     }
 }
