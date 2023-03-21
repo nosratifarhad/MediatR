@@ -16,7 +16,7 @@ services.AddMediatR(typeof(Program).Assembly);
 
 ```csharp
 
-// ICommand  or command requests
+// IRequest or command requests
 public class CreateProductCommand : IRequest
 {
     public string ProductTitle { get; set; }
@@ -24,7 +24,7 @@ public class CreateProductCommand : IRequest
     public string ProductName { get; set; }
 }
 
-// IQuery for get requests
+// IRequest for get requests
 public class GetProductQuery : IRequest<IEnumerable<ProductVM>>
 {
     public int ProductId { get; set; }
