@@ -4,7 +4,7 @@
 
 * 1 - Application Folder
     * Application Layer 
-    * In This Layer , Handel Command And Queries .
+    * In This Layer , Have Command And Queries And Handlers .
 * 2 - Service Folder
     * Service Layer 
     * For Data Persistence And Use ORM (Entity FrameWork).
