@@ -1,5 +1,13 @@
 # MediatR
 
+1 - Application Folder
+    _ Application Layer 
+       _ In This Layer , Handel Command And Queries .
+       
+2 -  Service Folder
+    _ Service Layer 
+       _ For Data Persistence And Use ORM (Entity FrameWork).
+
 ### first You need to install the following packages :
 
 ```
