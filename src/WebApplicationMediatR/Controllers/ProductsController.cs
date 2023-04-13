@@ -14,7 +14,6 @@ namespace WebApplicationMediatR.Controllers
         public ProductsController(IMediator mediator)
         {
             _mediator = mediator;
-
         }
 
         /// <summary>
