@@ -2,20 +2,12 @@
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-
-1 - Application Folder
-    _ Application Layer 
-       _ In This Layer , Handel Command And Queries .
-       
-2 -  Service Folder
-    _ Service Layer 
-       _ For Data Persistence And Use ORM (Entity FrameWork).
+* 1 - Application Folder
+    * Application Layer 
+    * In This Layer , Handel Command And Queries .
+* 2 - Service Folder
+    * Service Layer 
+    * For Data Persistence And Use ORM (Entity FrameWork).
 
 ### first You need to install the following packages :
 
