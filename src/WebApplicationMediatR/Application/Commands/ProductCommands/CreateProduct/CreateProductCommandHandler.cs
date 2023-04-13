@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using WebApplicationMediatR.Dtos;
-using WebApplicationMediatR.Service;
+using WebApplicationMediatR.Service.Contracts;
 
 namespace WebApplicationMediatR.Application.Commands.ProductCommands.CreateProduct
 {

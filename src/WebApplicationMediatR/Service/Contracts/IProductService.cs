@@ -1,7 +1,7 @@
 ﻿using WebApplicationMediatR.Dtos;
 using WebApplicationMediatR.ViewModels.ProductViewModels;
 
-namespace WebApplicationMediatR.Service
+namespace WebApplicationMediatR.Service.Contracts
 {
     public interface IProductService
     {

@@ -1,4 +1,5 @@
 ﻿using WebApplicationMediatR.Service;
+using WebApplicationMediatR.Service.Contracts;
 
 namespace WebApplicationMediatR.IOC
 {
