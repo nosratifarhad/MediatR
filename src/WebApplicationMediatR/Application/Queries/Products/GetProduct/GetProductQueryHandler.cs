@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using WebApplicationMediatR.Service;
+using WebApplicationMediatR.Service.Contracts;
 using WebApplicationMediatR.ViewModels.ProductViewModels;
 
 namespace WebApplicationMediatR.Application.Queries.Products.GetProduct
