@@ -21,8 +21,7 @@ NuGet\Install-Package MediatR.Extensions.Microsoft.DependencyInjection
 services.AddMediatR(typeof(Program).Assembly);
 ```
 ### And the Final level for use "MediatR" : 
-## Go To Application Folder (Layer) And Create Command Or Query and Use down Code in Application Layer .
-
+* Go To Application Folder (Layer) And Create Command Or Query and Use down Code in Application Layer .
 ### You should use "IRequest" for command and query requests , like this :
 
 ### Sample Command And CommandHandler
