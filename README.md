@@ -1,6 +1,6 @@
 # MediatR
 
-## Version History
+## More details about the architecture .
 
 * 1 - Application Folder
     * Application Layer 
