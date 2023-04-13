@@ -7,7 +7,7 @@
     * In This Layer , Have Command And Queries And Handlers .
 * 2 - Service Folder
     * Service Layer 
-    * For Data Persistence And Use ORM (Entity FrameWork).
+    * For Data Persistence And Use ORM (Entity FrameWork). 
 
 ### first You need to install the following packages :
 
