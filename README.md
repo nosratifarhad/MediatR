@@ -1,5 +1,14 @@
 # MediatR
 
+## Version History
+
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
+
+
 1 - Application Folder
     _ Application Layer 
        _ In This Layer , Handel Command And Queries .
