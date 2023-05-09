@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using WebApplicationMediatR.Application.Commands.ProductCommands.CreateProduct;
-using WebApplicationMediatR.Application.Queries.Products.GetProduct;
+using WebApplicationMediatR.Application.Features.Commands.ProductCommands.CreateProduct;
+using WebApplicationMediatR.Application.Features.Queries.Products.GetProduct;
 
 namespace WebApplicationMediatR.Controllers
 {

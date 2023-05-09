@@ -1,7 +1,7 @@
-﻿using System.Reflection;
-using MediatR;
+﻿using MediatR;
 using Microsoft.OpenApi.Models;
-using WebApplicationMediatR.IOC;
+using WebApplicationMediatR.Domain;
+using WebApplicationMediatR.Repository;
 
 namespace WebApplicationMediatR
 {
@@ -16,7 +16,7 @@ namespace WebApplicationMediatR
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddWebApplicationMediatRService();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
             #region [ MediatR ]
 

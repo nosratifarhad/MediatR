@@ -1,0 +1,48 @@
+﻿using MediatR;
+using WebApplicationMediatR.Domain;
+using WebApplicationMediatR.Domain.Entity;
+
+namespace WebApplicationMediatR.Application.Features.Commands.ProductCommands.CreateProduct
+{
+    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand>
+    {
+        #region Fields
+
+        private readonly IProductRepository _productRepository;
+        #endregion Fields
+
+        #region Ctor
+
+        public CreateProductCommandHandler(IProductRepository productRepository)
+        {
+            this._productRepository = productRepository;
+        }
+
+        #endregion Ctor
+
+        #region Handle
+
+        public async Task<Unit> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+        {
+            var createProduct = GenereateCreateProductDtoFromaCommand(request);
+
+            await _productRepository.CreateProduct(createProduct, cancellationToken).ConfigureAwait(false);
+
+            return Unit.Value;
+        }
+
+        #endregion
+
+        #region Private
+
+        private Product GenereateCreateProductDtoFromaCommand(CreateProductCommand command)
+            => new Product()
+            {
+                //Map
+            };
+
+        #endregion Private
+
+
+    }
+}

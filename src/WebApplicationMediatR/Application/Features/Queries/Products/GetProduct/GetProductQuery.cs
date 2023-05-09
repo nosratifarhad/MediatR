@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using WebApplicationMediatR.ViewModels.ProductViewModels;
 
-namespace WebApplicationMediatR.Application.Queries.Products.GetProduct
+namespace WebApplicationMediatR.Application.Features.Queries.Products.GetProduct
 {
     public class GetProductQuery : IRequest<IEnumerable<ProductVM>>
     {
