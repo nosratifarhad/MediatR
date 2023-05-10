@@ -14,5 +14,10 @@ namespace WebApplicationMediatR.Repository
         {
             return await Task.FromResult(Enumerable.Empty<Product>());
         }
+
+        public async Task<Product> GetProduct(int productId, CancellationToken cancellationToken)
+        {
+            return await Task.Run(() => new Product());
+        }
     }
 }

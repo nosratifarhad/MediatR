@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApplicationMediatR.Application.Features.Commands.ProductCommands.CreateProduct;
 using WebApplicationMediatR.Application.Features.Queries.Products.GetProduct;
+using WebApplicationMediatR.Application.Features.Queries.Products.GetProductById;
 
 namespace WebApplicationMediatR.Controllers
 {
@@ -21,7 +22,7 @@ namespace WebApplicationMediatR.Controllers
         /// </summary>
         /// <param name="command"></param>
         /// <returns></returns>
-        [HttpPost("/api/v1/product")]
+        [HttpPost("/api/v1/products")]
         public async Task<IActionResult> CreateProduct(CreateProductCommand command)
         {
             await _mediator.Send(command);
@@ -34,14 +35,25 @@ namespace WebApplicationMediatR.Controllers
         /// </summary>
         /// <param name="productId"></param>
         /// <returns></returns>
-        [HttpGet("/api/v1/product/{productId:int}")]
+        [HttpGet("/api/v1/products/{productId:int}")]
         public async Task<IActionResult> GetProduct(int productId)
         {
-            var productVMs = await _mediator.Send(new GetProductQuery() { ProductId = productId });
+            var productVMs = await _mediator.Send(new GetProductByIdQuery() { ProductId = productId });
 
             return Ok(productVMs);
         }
 
+        /// <summary>
+        /// GetProduct
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("/api/v1/products")]
+        public async Task<IActionResult> GetProduct()
+        {
+            var productVMs = await _mediator.Send(new GetProductQuery());
+
+            return Ok(productVMs);
+        }
 
     }
 }

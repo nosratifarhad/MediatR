@@ -7,5 +7,7 @@ namespace WebApplicationMediatR.Domain
         Task CreateProduct(Product product, CancellationToken cancellationToken);
 
         Task<IEnumerable<Product>> GetProduct(CancellationToken cancellationToken);
+
+        Task<Product> GetProduct(int productId, CancellationToken cancellationToken);
     }
 }
