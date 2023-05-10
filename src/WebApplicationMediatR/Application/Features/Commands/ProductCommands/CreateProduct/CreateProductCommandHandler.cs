@@ -24,7 +24,7 @@ namespace WebApplicationMediatR.Application.Features.Commands.ProductCommands.Cr
 
         public async Task<Unit> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            var createProduct = GenereateCreateProductDtoFromaCommand(request);
+            var createProduct = GenereateCreateProductFromaCommand(request);
 
             await _productRepository.CreateProduct(createProduct, cancellationToken).ConfigureAwait(false);
 
@@ -35,7 +35,7 @@ namespace WebApplicationMediatR.Application.Features.Commands.ProductCommands.Cr
 
         #region Private
 
-        private Product GenereateCreateProductDtoFromaCommand(CreateProductCommand command)
+        private Product GenereateCreateProductFromaCommand(CreateProductCommand command)
             => new Product()
             {
                 //Map
