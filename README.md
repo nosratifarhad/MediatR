@@ -2,11 +2,9 @@
 
 ## More details about the architecture .
 
-* 1 - Application Folder
-    * Application Layer 
+* 1 - Application Folder is Application Layer 
     * In This Layer , Have Command And Queries And Handlers .
-* 2 - Service Folder
-    * Service Layer 
+* 2 - Service Folder is Service Layer 
     * For Data Persistence And Use ORM (Entity FrameWork). 
 
 ### first You need to install the following packages :
@@ -72,4 +70,5 @@ public class GetProductQueryHandler : IRequestHandler<GetProductQuery, IEnumerab
 }
 
 ```
-
+![My Remote Image](https://github.com/nosratifarhad/MediatR/blob/main/imgs/Annotation.jpg)
+![My Remote Image](https://github.com/nosratifarhad/MediatR/blob/main/imgs/Annotation1.jpg)
