@@ -37,9 +37,8 @@ public class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, P
 
     #region Private
 
-    private ProductVM CreateProductVM(Product products)
-        => new ProductVM();
-
+    private ProductVM CreateProductVM(Product product)
+        => new ProductVM(product.Id, product.Name);
 
     #endregion Private
 

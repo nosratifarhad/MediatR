@@ -38,9 +38,10 @@ public class GetProductQueryHandler : IRequestHandler<GetProductQuery, IEnumerab
 
     private IEnumerable<ProductVM> CreateProductVM(IEnumerable<Product> products)
     {
-        IEnumerable<ProductVM> productVMs = new List<ProductVM>();
+        List<ProductVM> productVMs = new List<ProductVM>();
+
         foreach (var product in products)
-            new List<ProductVM>();
+            productVMs.Add(new ProductVM(product.Id, product.Name));
 
         return productVMs;
     }
