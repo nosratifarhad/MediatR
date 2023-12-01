@@ -2,7 +2,7 @@
 using WebApplicationMediatR.Domain;
 using WebApplicationMediatR.Domain.Entity;
 
-namespace WebApplicationMediatR.Application.Features.Products.Commands.ProductCommands.CreateProduct;
+namespace WebApplicationMediatR.Application.Features.Products.Commands.CreateProduct;
 
 public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand>
 {
