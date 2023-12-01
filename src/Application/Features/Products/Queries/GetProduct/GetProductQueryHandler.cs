@@ -3,7 +3,7 @@ using WebApplicationMediatR.Domain.Entity;
 using WebApplicationMediatR.Domain;
 using WebApplicationMediatR.ViewModels.ProductViewModels;
 
-namespace WebApplicationMediatR.Application.Features.Products.Queries.Products.GetProduct;
+namespace WebApplicationMediatR.Application.Features.Products.Queries.GetProduct;
 
 public class GetProductQueryHandler : IRequestHandler<GetProductQuery, IEnumerable<ProductVM>>
 {
